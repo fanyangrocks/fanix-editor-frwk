@@ -1,5 +1,5 @@
 [project]
-name = "fanix_editor_frwk"
+name = "fanix-editor-frwk"
 version = "0.0.1"
 description = "A editor framework based on immutable data structures"
 authors = [
