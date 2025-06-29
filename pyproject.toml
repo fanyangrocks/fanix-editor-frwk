@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/fanyangrocks/fanix_editor_frwk"
+Homepage = "https://github.com/fanyangrocks/fanix-editor-frwk"
 
 [tool.setuptools]
 packages = ["fanix_editor_frwk"]
