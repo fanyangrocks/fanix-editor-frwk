@@ -1,6 +1,9 @@
 import uuid
+from collections.abc import Iterable
+from typing import Callable
 
 from pyrsistent import field
+from pyrsistent import PVector
 from pyrsistent import PRecord
 
 
@@ -21,11 +24,11 @@ class RecordWithUUID(PRecord):
 
 
 class ViewData(PRecord):
-    id_ = field()
-    name = field()
-    data = field()
-    submit_callback = field()
-    child_views = field()
+    id_: int = field()
+    name: str = field()
+    data: PRecord = field()
+    submit_callback: Callable = field()
+    child_views: Iterable[PVector] = field()
 
 
 class DataManager(object):
