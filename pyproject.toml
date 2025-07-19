@@ -21,7 +21,11 @@ dev = [
 Homepage = "https://github.com/fanyangrocks/fanix-editor-frwk"
 
 [tool.setuptools]
-packages = ["fanix_editor_frwk"]
+packages = [
+    "fanix_editor_frwk",
+    "fanix_editor_frwk.app",
+    "fanix_editor_frwk.protocol"
+]
 package-dir = {"fanix_editor_frwk" = "src/fanix_editor_frwk"}
 [build-system]
 requires = ["setuptools>=61.0"]
